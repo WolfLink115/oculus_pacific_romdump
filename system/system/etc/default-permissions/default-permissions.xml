@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!--
+    This file contains permissions to be granted by default. Default
+    permissions are granted to special platform components and to apps
+    that are approved to get default grants. The special components
+    are apps that are expected tto work out-of-the-box as they provide
+    core use cases such as default dialer, default email, etc. These
+    grants are managed by the platform. The apps that are additionally
+    approved for default grants are ones that provide carrier specific
+    functionality, ones legally required at some location, ones providing
+    alternative disclosure and opt-out UI, ones providing highlight features
+    of a dedicated device, etc. This file contains only the latter exceptions.
+    Fixed permissions cannot be controlled by the user and need a special
+    approval. Typically these are to ensure either legally mandated functions
+    or the app is considered a part of the OS.
+-->
+
+<!--
+    DANGER: ONLY GRANT PROTECTIONLEVEL=DANGEROUS PERMISSIONS IN THIS FILE.
+    If you add other permissions, it will cause a crash in system server on first
+    boot after flash or update, which breaks a lot of things. It also causes
+    some permissions in this file to permanently fail to be granted, which will
+    break even more things.
+-->
+
+<exceptions>
+  <exception
+    package="com.oculus.assistant" >
+    <permission name="android.permission.RECORD_AUDIO" fixed="false" />
+  </exception>
+  <exception
+    package="com.oculus.bugreporter" >
+    <permission name="android.permission.RECORD_AUDIO" fixed="false" />
+  </exception>
+  <exception
+    package="com.oculus.horizon" >
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+  </exception>
+  <exception
+    package="com.oculus.ocms">
+    <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false" />
+    <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false" />
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+  </exception>
+  <exception
+    package="com.oculus.shellenv" >
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+  </exception>
+  <exception
+    package="com.oculus.socialplatform" >
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+  </exception>
+  <exception
+    package="com.oculus.systemdriver">
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+  </exception>
+  <exception
+    package="com.oculus.systemutilities" >
+    <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false" />
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+  </exception>
+  <exception
+    package="com.oculus.systemux" >
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+  </exception>
+  <exception
+    package="com.oculus.vrshell" >
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+  </exception>
+  <exception
+    package="com.oculus.vrshell.home" >
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+    <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+  </exception>
+  <exception
+    package="com.oculus.xrstreamingclient" >
+    <permission name="android.permission.RECORD_AUDIO" fixed="false" />
+  </exception>
+</exceptions>

@@ -1,0 +1,11 @@
+libmve.so
+libOmxCore.so
+libOmxVdec.so
+libOmxVenc.so
+libOmxVpp.so
+libossdk.so
+libOpenCL.so
+libqti_performance.so
+libqti-perfd-client.so
+libadsprpc.so
+libsdsprpc.so

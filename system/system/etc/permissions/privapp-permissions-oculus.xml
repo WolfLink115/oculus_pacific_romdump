@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.oculus.assistant">
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SHUTDOWN"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.companion.server">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.guardian">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.notification_proxy">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.ocms">
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.dialoglauncher">
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.vraudiotester">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.preloader">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.statscollector">
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.systemdriver">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.systemutilities">
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.systemux">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.updater">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.userserver2">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.vralertservice">
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.vrshell">
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.yadi">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+</permissions>

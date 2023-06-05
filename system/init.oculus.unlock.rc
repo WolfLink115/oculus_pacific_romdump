@@ -1,0 +1,5 @@
+on property:oculus.system_unlock=*
+    oem_unlock ${oculus.system_unlock}
+
+on property:sys.oem_unlock_allowed=*
+    exec - system system -- /system/bin/set_unlock_allowed -p ${sys.oem_unlock_allowed}

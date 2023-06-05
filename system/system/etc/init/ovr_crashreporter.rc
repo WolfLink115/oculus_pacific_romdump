@@ -1,0 +1,40 @@
+# Initialize the crashreporter directory layout.
+on post-fs-data
+    mkdir /data/misc/crashes/ 770 root system
+    restorecon_recursive /data/system/dropbox
+
+on property:sys.boot_completed=1
+    start panicreporter
+    # delay start of crashreporter daemon until dropbox is created.
+    wait /data/system/dropbox
+    start crashreporterd
+
+# minidumpd: minidump server living in debuggerd (arm32).
+service minidumpd /system/bin/debuggerd -m
+    class main
+    user root
+    group system readproc
+    writepid /dev/cpuset/system-background/tasks
+
+# minidumpd: minidump server living in debuggerd (arm64).
+service minidumpd64 /system/bin/debuggerd64 -m
+    class main
+    user root
+    group system readproc
+    writepid /dev/cpuset/system-background/tasks
+
+# crashreporterd: run the exception collector in a process.
+service crashreporterd /system/bin/ovr_crashreporter -c
+    class main
+    disabled
+    user system
+    group system
+    writepid /dev/cpuset/system-background/tasks
+
+# panicreporter: report a kernel panic if any.
+service panicreporter /system/bin/ovr_crashreporter -k
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot

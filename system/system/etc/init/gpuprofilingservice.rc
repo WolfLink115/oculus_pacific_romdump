@@ -1,0 +1,12 @@
+service gpuprofserver /system/bin/gpuprofserver
+    class main
+    user system
+    group system inet
+    disabled
+    writepid /dev/cpuset/system-background/task
+
+on property:debug.vr.profiler=1
+    start gpuprofserver
+
+on property:debug.vr.profiler=0
+    stop gpuprofserver

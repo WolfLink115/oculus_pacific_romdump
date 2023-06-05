@@ -1,0 +1,6 @@
+service bugreporter /system/bin/dumpstate -S -d -z \
+        -o /data/user_de/0/com.oculus.os.logcollector/cache/bugreport
+    socket dumpstate stream 0660 shell system
+    class main
+    disabled
+    oneshot

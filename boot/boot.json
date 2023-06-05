@@ -1,0 +1,34 @@
+{
+  "info" : {
+    "output" : "boot.img",
+    "json" : "boot.json",
+    "headerVersion" : 0,
+    "headerSize" : 0,
+    "loadBase" : 0,
+    "tagsOffset" : 2147483904,
+    "board" : "",
+    "pageSize" : 4096,
+    "cmdline" : "androidboot.hardware=pacific user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 bootver=1 minsysver=1 cma=32M@0-0xffffffff softdog.soft_panic=1 qpnp_smbcharger.default_dcp_icl_ma=2000 buildvariant=user veritykeyid=id:de8999404180e0b4ef6e7d11e263ce502ccafa5f",
+    "osVersion" : "7.1.1",
+    "osPatchLevel" : "2018-11-00",
+    "hash" : "tYx8DA0VoaLA+Ui0/m0GWRL9Q/EAAAAAAAAAAAAAAAA=",
+    "verify" : "VB1.0",
+    "imageSize" : 18993152
+  },
+  "kernel" : {
+    "file" : "build/unzip_boot/kernel",
+    "position" : 4096,
+    "size" : 9763843,
+    "loadOffset" : 2147516416
+  },
+  "ramdisk" : {
+    "file" : "build/unzip_boot/ramdisk.img.gz",
+    "position" : 9768960,
+    "size" : 9217382,
+    "loadOffset" : 2164260864,
+    "xzFlags" : null
+  },
+  "secondBootloader" : null,
+  "recoveryDtbo" : null,
+  "dtb" : null
+}

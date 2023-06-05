@@ -1,0 +1,2 @@
+on early-boot
+    exec - system system -- /system/bin/init.oculus.properties.sh

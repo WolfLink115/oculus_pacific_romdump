@@ -1,0 +1,6 @@
+service lmkd /system/bin/ovrlmkd
+    class core
+    group root readproc
+    critical
+    socket lmkd seqpacket 0660 system system
+    writepid /dev/cpuset/system-background/tasks

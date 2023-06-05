@@ -1,0 +1,8 @@
+on post-fs-data
+    mkdir /data/oculus 0750 system system
+    mkdir /data/oculus/settings 0750 system system
+
+service settingsserver /system/bin/settingsserver
+    class main
+    user system
+    group system

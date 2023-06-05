@@ -1,0 +1,6 @@
+service voiceassistantserver /system/bin/voiceassistantserver
+    class late_start
+    user system
+    group system
+    ioprio rt 4
+    disabled
